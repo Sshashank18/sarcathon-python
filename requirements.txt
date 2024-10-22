@@ -2,3 +2,6 @@ Flask
 faiss-cpu
 sentence-transformers
 gunicorn
+numpy
+torch
+transformers

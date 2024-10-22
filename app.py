@@ -139,7 +139,7 @@ def find_similar_faq(query):
     query_embedding = model.encode([query], convert_to_tensor=True)
     query_embedding_np = query_embedding.cpu().numpy()
 
-    # Search for the top 5 most similar FAQs
+    # Search for the top 3 most similar FAQs
     distances, indices = index.search(query_embedding_np, k=3)
     
     results = []
