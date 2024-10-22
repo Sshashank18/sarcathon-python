@@ -167,6 +167,6 @@ def hello_world():
     return 'Hello, World!'
 
 # # Run the Flask app
-# if __name__ == '__main__':
-#     port = int(os.environ.get('PORT', 5000))  # Use the PORT environment variable
-#     app.run(host='0.0.0.0', port=port)
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))  # Use the PORT environment variable
+    app.run(host='0.0.0.0', port=port)
